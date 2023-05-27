@@ -1,0 +1,28 @@
+FUNCTION samenumbers (set1,set2) : INTEGER
+VAR
+    sum = integer := 0
+    set1 = ARRAY_OF INTEGER[3];
+    set2 = ARRAY_OF INTEGER[4];
+    
+BEGIN
+
+    FOR i FROM 0 TO length.set1 STEP 1  DO
+    FOR j FROM 0 TO length.set2 STEP 1  DO
+        IF set1[i] =set2[j] THEN 
+    BREAK
+    IF J = length.set2
+    sum := sum + set1[i]
+    END_FOR
+    END_FOR 
+    END
+    ALGORITHM Main 
+    VAR
+     First : ARRAY_OF type[INTEGER];
+     Second : ARRAY_OF type[INTEGER];
+     sums1,sums2,sums3 = INTEGER := 0
+    BEGIN
+        sums1 := samenumbers (First , Second)
+        sums2 := samenumbers (Second , First)
+        sums3 := sums1 + sums2
+    END
+   
